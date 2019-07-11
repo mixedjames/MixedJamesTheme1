@@ -1,0 +1,101 @@
+/**
+ * What goes here?
+ *
+ * Basic page structure:
+ * <html/>     <-- this
+ * <body/>     <-- this
+ *   <header/> <-- this
+ *   <main/>   <-- not this
+ *   <footer/> <-- this
+ */
+
+/* Some basic settings to make styling easier later */
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+/**
+ * Main styling
+ */
+body {
+  font-family: $serif;
+  background: $bg-color;
+  color: $text-color;
+
+  font-size: $base-font-size;
+}
+
+header.page-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+
+  display: flex;
+  justify-content: right;
+  padding: 10px;
+
+  background: $bg-color;
+  color: $text-color;
+  font-family: $sans-serif;
+  font-size: 75%;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+
+  .site-title {
+    flex-grow: 1;
+
+    margin-left: 20px;
+    margin-bottom: 50px;
+
+    display: block;
+    border: solid 1px $bg-color;
+
+    a {
+      color: black;
+      text-decoration: none;
+    }
+
+  }
+
+  nav {
+    height: auto;
+
+    a {
+      display: inline-block;
+      min-width: 75px;
+      color: black;
+      text-decoration: none;
+    }
+
+  } /* nav */
+
+  h1 {
+    border: none;
+    text-align: center;
+    font-size: 500%;
+    font-style: italic;
+    letter-spacing: 5px;
+
+    margin-top: 150px;
+  }
+
+} /* header.page-header */
+
+.site-title {
+
+}
+
+footer {
+  max-width: 600px;
+  margin: auto;
+  margin-bottom: 50px;
+  margin-top: 50px;
+  text-align: center;
+  font-size: 80%;
+}

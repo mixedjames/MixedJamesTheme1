@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>{{ page.title }} - MixedJames</title>
+  <link href="{{ "/assets/css/style.css" | absolute_url }}" type="text/css" rel="stylesheet">
+
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+        displayMath: [ ['$$', '$$'], ["\\[", "\\]"] ],
+        inlineMath: [['$','$']]
+      }
+    });
+  </script>
+  <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+
+
+</head>
+<body>
+
+  <header class="page-header">
+    <div class="site-title"><a href="{{ "" | absolute_url }}">MixedJames</a></div>
+
+    <nav>
+      <a href="{{ "" | absolute_url }}">Home</a>
+      <a href="{{ "about.html" | absolute_url }}">About</a>
+      <a href="https://github.com/mixedjames/" target="_blank">GitHub</a>
+    </nav>
+  </header>

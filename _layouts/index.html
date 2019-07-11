@@ -1,0 +1,24 @@
+{% include page-top.html %}
+
+  <main class="posts">
+    <header class="site-title">
+      <h1>MixedJames</h1>
+    </header>
+
+    {{ page.content }}
+
+    <h1>Recent Posts</h1>
+
+  {% for post in site.posts %}
+    <a href="{{ post.url }}">
+    <article>
+      <h1>{{ post.title }}</h1>
+      <p class="date-time">{{ post.date | date: '%-d %B, %Y' }}</p>
+      <p>{{ post.excerpt }}</p>
+    </article>
+    </a>
+  {% endfor %}
+
+  </main>
+
+{% include page-bottom.html %}

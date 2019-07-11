@@ -1,2 +1,3 @@
 # MixedJamesTheme1
-The first theme for MixedJames
+
+The default theme for the MixedJames site.
