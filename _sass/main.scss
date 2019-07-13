@@ -73,6 +73,14 @@ main {
       font-style: italic;
     }
 
+    dd {
+      font-weight: bold;
+    }
+
+    dt {
+      font-style: italic;
+    }
+
     blockquote {
       background: $text-color;
       border-radius: 15px;
@@ -167,7 +175,7 @@ main {
   &.post {
 
     article {
-      p:first-of-type,
+      > p:first-of-type,
       p.large
       {
         font-size: 150%;
