@@ -117,11 +117,16 @@ main {
       }
     } // blockquote
 
-    figure {
+    pre {
       background: darken($bg-color, 5%);
       padding: 3px 10px 3px 10px;
       border-radius: 4px;
       font-size: $base-font-size * 0.8;
+
+      margin-block-start: 1em;
+      margin-block-end: 1em;
+      margin-inline-start: 40px;
+      margin-inline-end: 40px;
     }
 
   } // article
