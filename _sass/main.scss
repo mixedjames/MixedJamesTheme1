@@ -10,7 +10,8 @@
  */
 
 main {
-  max-width: 600px;
+  display: block;
+  max-width: $content-max-width;
   margin: auto;
 
   header {
@@ -34,6 +35,8 @@ main {
   } /* header */
 
   article {
+    width: 600px;
+
     img.right {
       float: right;
     }
@@ -138,8 +141,6 @@ main {
    * of posts.
    */
   &.posts {
-    max-width: 600px;
-    margin: auto;
 
     > h1 {
       font-size: 300%;
